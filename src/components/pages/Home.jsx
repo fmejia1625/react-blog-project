@@ -1,7 +1,6 @@
 import React from 'react';
 import '../../App.css';
 import CardHolder from '../CardHolder';
-import Footer from '../Footer';
 import LandingPage from '../LandingPage';
 
 function Home () {
@@ -9,7 +8,7 @@ function Home () {
     <>
       <LandingPage />
       <CardHolder />
-      <Footer />
+      
     </>
   );
 }

@@ -6,19 +6,25 @@ import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import BlogPosts from './components/pages/BlogPosts';
 import Contact from './components/pages/Contact';
 import SignUp from './components/pages/SignUp';
+import Footer from './components/Footer';
+
 
 function App() {
   return (
     <>
     <Router>
      <Nav />
+     
       <Switch>
         <Route path = "/" exact component = {Home} />
         <Route path = "/blogposts" component = {BlogPosts} />
         <Route path = "/contact" component = {Contact} />
         <Route path = "/signup" component = {SignUp} />
       </Switch>
+
+      <Footer />
      </Router>
+     
     </>
   );
 }
