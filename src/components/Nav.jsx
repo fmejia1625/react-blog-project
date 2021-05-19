@@ -29,9 +29,19 @@ function Nav() {
     <>
       <nav className="navbar">
         <div className="navbarContainer">
-
-          <Link to="/" className="navbarLogo" onClick = {closeMobileMenu}>
-            Frankie's Coding BootCamp Blog 
+            &nbsp;
+            &nbsp;
+          <Link to="/" className="navbarLogo" onClick = {closeMobileMenu} style={{
+            backgroundImage: `url("https://perscholas.org/wp-content/themes/per-scholas/assets/images/logo1.svg")`,
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center"}}>
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            Frankie's Coding Blog
+            &nbsp;
+            &nbsp;
+            &nbsp;
             <i className="fas fa-code" />
           </Link>
 
