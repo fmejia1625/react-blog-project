@@ -41,7 +41,7 @@ function Nav() {
           
            <span>Frankie's Coding Blog &nbsp; &nbsp; &nbsp; 
               &nbsp; &nbsp; </span>
-          <i className="fas fa-code" /> 
+            <i className="fas fa-code" /> 
           </Link>
 
           <div className="menuIcon" onClick={handleClick}>
