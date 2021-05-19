@@ -35,10 +35,13 @@ function Nav() {
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
             }}>
-            &nbsp;
+            {/* &nbsp;
             Frankie's Coding Blog  &nbsp; &nbsp; &nbsp;
-            &nbsp;
-            <i className="fas fa-code" />
+            &nbsp; */}
+          
+           <span>Frankie's Coding Blog &nbsp; &nbsp; &nbsp; 
+              &nbsp; &nbsp; </span>
+          <i className="fas fa-code" /> 
           </Link>
 
           <div className="menuIcon" onClick={handleClick}>

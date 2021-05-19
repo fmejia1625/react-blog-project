@@ -1,12 +1,12 @@
 .navbar {
   background: #0179c0;
-  height: 80px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
   position: sticky;
-  top: 0;
+  top: auto;
   z-index: 999;  
 }
 
@@ -20,9 +20,10 @@
 
 .navbarLogo {
   color: #fff;
+  height: 100px;
   justify-self: start;
   margin-left: 20px;
-  /* padding-bottom: 14px; */
+  padding-bottom: 14px;
   cursor: pointer;
   text-decoration: none;
   font-size: 2rem;
@@ -32,7 +33,7 @@
 }
 
 .fa-code {
-  margin-top: 5px;
+  margin-top: 20px;
   margin-left: 0.5rem;
   font-size: 1.8rem;
 }
@@ -41,8 +42,9 @@
   background: #fff;
   color: #1c496c;
   transition: all 0.3s ease-out;
-  border-bottom: 4px solid #0179c0;
+  border-bottom: 8px solid #0179c0;
 }
+
 
 .nav-menu {
   display: grid;
@@ -56,7 +58,7 @@
 }
 
 .nav-item {
-  height: 80px;
+  height: 100px;
 }
 
  .nav-links {
@@ -71,7 +73,7 @@
 .nav-links:hover {
   background: #fff;
   color: #1c496c;
-  border-bottom: 4px solid #0179c0;
+  border-bottom: 8px solid #0179c0;
   transition: all 0.2s ease-out;
 }
 
