@@ -42,7 +42,7 @@ function CardHolder() {
               />
               <CardItems 
                 src = {catImg}
-                text = "Join my non-existant community now by signing up. You won't regret it! (hopefully)"
+                text = "Join my non-existent community now by signing up. You won't regret it! (hopefully)"
                 label = "Join us"
                 path = '/signUp'
               />

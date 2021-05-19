@@ -4,3 +4,46 @@
   box-sizing: border-box;
   font-family: Nitti Grotesk, Helvetica Neue, Arial, sans-serif;
 }
+
+.home,
+.contact,
+.signup {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+.blogposts {
+  background-image: url('./components/img/reactLogo.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: black;
+  font-size: 100px;
+  display: flex;
+  height: 90vh;
+  /* align-items: center; */
+  justify-content: center;
+  font-size: 3rem;
+}
+
+.contact {
+  background-image: url('./components/img/puppy.jpeg');
+  image-rendering: pixelated;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: black;
+  font-size: 100px;
+}
+
+.signup {
+  background-image: url('./components/img/dogs.jpeg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: black;
+  font-size: 100px;
+}
