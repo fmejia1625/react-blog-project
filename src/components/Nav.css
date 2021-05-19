@@ -29,7 +29,7 @@
   align-items: center;
 }
 
-i {
+.fa-code {
   margin-left: 0.5rem;
   font-size: 1.8rem;
 }
@@ -59,7 +59,7 @@ i {
 } 
 
 .nav-links:hover {
-  border-bottom: 4px solid #fff;
+  border-bottom: 4px solid #1c496c;
   transition: all 0.2s ease-out;
 }
 
@@ -93,7 +93,7 @@ i {
   } 
 
   .nav-menu.active {
-    background: #242222;
+    background: #1c496c;
     left: 0;
     opacity: 1;
     transition: all 0.5s ease;
@@ -157,4 +157,4 @@ i {
   }
  } 
 
-/* Creare styling for buttons by hardcoding everything and reviewing media queries again in order to make the web app mobile-friendly. (This will take quite some time) */
+/* Creare styling for buttons by hardcoding everything and reviewing media queries again in order to make the web app mobile-friendly. (This will take quite some time (and it did)) */

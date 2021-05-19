@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { Button } from './Button';
 import { Link } from 'react-router-dom';
 import './Nav.css';
-import { Button } from './Button';
 
 function Nav() {
   const [click, setClick] = useState(false);
@@ -19,18 +19,26 @@ function Nav() {
     }
   };
 
+  useEffect(() => {
+    showButton()
+  }, []);
+
   window.addEventListener('resize', showButton);
 
   return (
     <>
       <nav className="navbar">
         <div className="navbarContainer">
-          <Link to="/" className="navbarLogo">
-            Frankie's Coding BootCamp Blog <i className="fas fa-code"></i>
+
+          <Link to="/" className="navbarLogo" onClick = {closeMobileMenu}>
+            Frankie's Coding BootCamp Blog 
+            <i className="fas fa-code" />
           </Link>
+
           <div className="menuIcon" onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
           </div>
+
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
 
             <li className="nav-item">
@@ -40,7 +48,7 @@ function Nav() {
             </li>
 
             <li className="nav-item">
-              <Link to="/blogPosts" className="nav-links" onClick={closeMobileMenu}>
+              <Link to="/blogposts" className="nav-links" onClick={closeMobileMenu}>
                 Blog Posts
               </Link>
             </li>
@@ -56,9 +64,10 @@ function Nav() {
               Sign Up
               </Link>
             </li>
+
           </ul>
-          
-          {button && <Button buttonStyle = 'btn--outline'>Sign Up</Button>}
+
+          {button && <Button buttonStyle = 'btn--outline'>Sign up</Button>}
         </div>
       </nav>
     </>
@@ -77,6 +86,8 @@ export default Nav;
 
 // 5. Use the same logic when creating seperate links for Blog Posts and Contact components. 
 
-// 6. Utilize the Button.js component and CSS styling here in the Nav. Inside curly boys, we use logical and to return a boolean (in this case, the button component along with styling 
+// 6. Utilize the Button.js component and CSS styling here in the Nav. Inside curly boys, we use logical and to return a boolean (in this case, the button component along with styling. Remember to close out Link tags rather than self-closing, will save you a lot of headaches)
 
 // 7. set state for button using button, setButton. set useState as true. Create a function of showButton that will or will not display button if the innerWidth of window is less than 960 pixels. Else, it will setButton as true. 
+
+// 8. Utilize useEffect in order to prevent button from rendering by passing in an empty array. Call closeMobileMenu function within the logo in order to close the menu when clicking on icon.
