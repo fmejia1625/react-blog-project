@@ -54,10 +54,10 @@ h1 {
   overflow: hidden;
 }
 
-/* .fade-img {
+.fade-img {
   animation-name: fade-img;
   animation-duration: 2s;
-} */
+}
 
 .cardsItemPictureWrap::after {
   content: attr(data-category);
@@ -108,14 +108,16 @@ h1 {
   }
 } */
 
-/* @media only screen and (min-width: 1024px) {
-  .cards__items {
+@media only screen and (min-width: 1024px) {
+  .cardsItems {
     display: flex;
   }
-} */
+}
 
-/* @media only screen and (max-width: 1024px) {
-  .cards__item {
+@media only screen and (max-width: 1024px) {
+  .cardsItems {
     margin-bottom: 2rem;
   }
-} */
+}
+
+/* Used media queries in order to display card Items in flex depending on the screen width. */
