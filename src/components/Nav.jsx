@@ -35,12 +35,9 @@ function Nav() {
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
             }}>
-            {/* &nbsp;
-            Frankie's Coding Blog  &nbsp; &nbsp; &nbsp;
-            &nbsp; */}
-          
-           <span>Frankie's Coding Blog &nbsp; &nbsp; &nbsp; 
-              &nbsp; &nbsp; </span>
+            Frankie's Coding Blog 
+            {/* <span>Frankie's Coding Blog &nbsp; &nbsp; &nbsp; 
+              &nbsp; &nbsp; </span> */}
             <i className="fas fa-code" /> 
           </Link>
 

@@ -19,7 +19,7 @@ function App() {
         <Route path = "/" exact component = {Home} />
         <Route path = "/blogposts" component = {BlogPosts} />
         <Route path = "/contact" component = {Contact} />
-        <Route path = "/signup" component = {SignUp} />
+        <Route path = "/signUp" component = {SignUp} />
       </Switch>
 
       <Footer />

@@ -20,15 +20,15 @@
 
 .navbarLogo {
   color: #fff;
-  height: 100px;
+  /* height: 100px; */
   justify-self: start;
-  /* margin-left: 20px; */
+  margin-left: 20px;
   padding-bottom: 14px;
   cursor: pointer;
   text-decoration: none;
   font-size: 2rem;
   display: flex;
-  text-align: justify;
+  /* text-align: justify; */
   align-items:center;
 }
 
