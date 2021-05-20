@@ -45,9 +45,9 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  color: aliceblue;
-  font-size: 100px;
-  display: flex;
-  justify-content: center;
+  color: black;
+  font-size: 30px;
+  /* display: flex; */
+  /* justify-content: center; */
   height: 90vh;
 }

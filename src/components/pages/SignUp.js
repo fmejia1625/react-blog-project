@@ -1,67 +1,59 @@
 import React from 'react';
-import { useState, setState } from 'react';
 import '../../App.css';
 
 
-export default function SignUp () {
+function SignUp () {
 
-  const [form, setForm] = useState ({
-    cityDetails: '',
-  });
-  // set state here for form & setForm
+// use window.onload to call function
+window.onload = () => {
+  randomUserGenerator()
+}
 
-  const [city, setCity] = useState([])
-  // set state for city and setCity 
+// create function to fetch data from randomuser API
+const randomUserGenerator = () => {
+// use .then to get ahold of the data and log the response and json. We see the difference here. 
+// use .then to return promise and retireve our data. Now we need to render the data. 
+    // eslint-disable-next-line
+    fetch('https://randomuser.me/api')
+    .then((response) => {
+        return response.json()
+    }) .then((data) => {
+      console.log(data)
+      showRandomUserData(data)
+    })
+}
 
-  async function displayCity(e) {
+ const showRandomUserData = (randomUser) => {
 
-      e.preventDefault(e);
-        if (form.cityDetails === '') {
-          alert("Please enter your seach here")
-        } else {
-       await fetch ("https://wft-geo-db.p.rapidapi.com/v1/geo/cities/Q60", {
-	            "method": "GET",
-	            "headers": {
-		           "x-rapidapi-key": "f6b75dd3a9msh181efc6db313b52p17e874jsnfa06dde9f4d5",
-		          "x-rapidapi-host": "wft-geo-db.p.rapidapi.com"
-	        }
-      })
-.then(response => {
-	console.log(response);
-})
-.catch(err => {
-	console.error(err);
-});
-        }
+    document.querySelector('.name').innerText = 
+      `${randomUser.results[0].name.title} ${randomUser.results[0].name.first} ${randomUser.results[0].name.last}`
+      
+    document.querySelector('.photo').innerText = `${randomUser.results[0].picture.medium}`  
 
-  }
+    document.querySelector('.age').innerText = `${randomUser.results[0].dob.age}`
 
-  // set data into state 
-  // setCity(
-  //   {
-  //     response : response
-  //   };
-  // )
+    document.querySelector('.email').innerText = `${randomUser.results[0].email}`
 
-  // create function for handleChange
-  const handleChange = (e) => {
-    let name = e.target.name;
-    let value = e.target.value;
-
-    if (name === "city") {
-      setForm({...form, city:value})
-    }
-  }
+    document.querySelector('.phone').innerText = `${randomUser.results[0].phone}`   
+}
 
   return (
   <>
-    <h1 className="signup">Sign Up Page</h1>
-      <form>
-        <input type = 'text' name = 'city' placeholder = 'Enter City Here' onChange={e=>handleChange(e)}></input>
-          <button onClick={e => displayCity(e)}>Submit</button>
-      </form>
+    <div className="signup">
+      <h1>List of Contributors</h1>
+      &nbsp;
+      <h2> Take a look at all of our users!</h2>
+      &nbsp;
+      <h3><p className="photo"></p></h3>
+      &nbsp;
+      <h3>Name:</h3><p className="name">___</p>
+      <h3>Age: </h3><p className="age">___</p>
+      <h3>Email: </h3><p className="email">___</p>
+      <h3>Phone: </h3><p className="phone">___</p>
+
+    </div>
   </>
   )
 }
-
+ export default SignUp;
 // 1. Follow the same process as the Contact.js component
