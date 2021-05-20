@@ -24,7 +24,7 @@ function Footer() {
       <div className="footerLinks">
         <div className="footerLinksWrapper">
           <div className="footerLinksItems">
-            <h2>About Me</h2>
+            <h2>About</h2>
             <Link to = "signUp">How you can join</Link>
             <Link to = "/">Work in progress</Link>
             <Link to = "/">Lifestyle</Link>
@@ -32,7 +32,7 @@ function Footer() {
             <Link to = "/">Terms of Service</Link>
           </div>
           <div className="footerLinksItems">
-            <h2>Contact Me</h2>
+            <h2>How to Contact</h2>
             <Link to = "/">Contact</Link>
             <Link to = "/">Support</Link>
             <Link to = "/">More Info</Link>
