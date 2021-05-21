@@ -1,6 +1,6 @@
 # My static blog website using React
 
-The link to my project can be found here hosted on Hiroku:
+The link to my project can be found here hosted on Hiroku: https://per-scholas-blog.herokuapp.com/
 
 ## Developing the app
 
