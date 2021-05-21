@@ -6,6 +6,7 @@ import '../../App.css';
 function SignUp () {
 
 // use window.onload to call function
+// Revised using useEffect
 
 useEffect(() => {
   randomUserGenerator()
